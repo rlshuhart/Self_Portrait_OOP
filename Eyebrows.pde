@@ -1,4 +1,4 @@
-class Eyebrows extends Eyes{
+class Eyebrows extends Eyes {
   //EYEBROWS
   color eyeBrow = color(100, 54, 50);
   float eyeBrowWidth = eyeWidth*1.25;
@@ -8,12 +8,20 @@ class Eyebrows extends Eyes{
   float leftEyeBrow_x = leftEye_x - (eyeBrowWidth-eyeWidth);
   // right
   float rightEyeBrow_x = rightEye_x;
-    
+
   // Constructors 
-  Eyebrows(){
+  Eyebrows() {
   }
-  
+
   // Methods
-  
+  void drawEyebrows() {
+    // Draw left eyebrow
+    fill(eyeBrow);
+    stroke(eyeBrow);
+    rect(leftEyeBrow_x, eyeBrow_y, eyeBrowWidth, eyeBrowHeight);
+    // Draw right eyebrow
+    rect(rightEyeBrow_x, eyeBrow_y, eyeBrowWidth, eyeBrowHeight);
+  }
+
   // Getters and Setters
 }

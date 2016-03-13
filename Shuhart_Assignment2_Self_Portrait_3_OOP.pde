@@ -1,11 +1,29 @@
+Head head;
+Eyes eyes;
+Eyebrows eyebrows;
+Nose nose;
+
 void setup() {
   background(255);
   size(400, 400);
 
   // draw ellipses from top left corner
   ellipseMode(CORNER); 
-
-  portrait();
+  
+  
+  head = new Head();
+  eyes = new Eyes();
+  eyebrows = new Eyebrows();
+  nose = new Nose();
+  
+  
+  head.drawhead();
+  eyes.drawEyes();
+  eyebrows.drawEyebrows();
+  nose.drawNose();
+  
+  
+  //portrait();
 }
 
 void portrait() {
@@ -75,6 +93,7 @@ void portrait() {
   fill(skin);
   stroke(skin);
   ellipse(head_x, head_y, headWidth, headHeight); 
+  
   // left eye
   fill(eyesWhite);
   stroke(eyesWhite);
@@ -99,12 +118,14 @@ void portrait() {
   fill(0);
   stroke(0);
   ellipse(rightPupil_x, eye_y+eyeHeight/2-pupilDiam/2, pupilDiam, pupilDiam);
+  
   // Draw left eyebrow
   fill(eyeBrow);
   stroke(eyeBrow);
   rect(leftEyeBrow_x, eyeBrow_y, eyeBrowWidth, eyeBrowHeight);
   // Draw right eyebrow
   rect(rightEyeBrow_x, eyeBrow_y, eyeBrowWidth, eyeBrowHeight);
+  
   // Draw nose
   fill(skin);
   stroke(nose);
@@ -120,6 +141,7 @@ void portrait() {
   arc(mouth_x, mouth_y-mouthHeight/2, mouthWidth, mouthHeight, 0, PI);
   // Draw Mouth – crease
   line(mouth_x, mouth_y, mouth_x+mouthWidth, mouth_y);
+  
   // Draw left ear
   fill(skin);
   stroke(nose);
