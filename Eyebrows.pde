@@ -23,5 +23,4 @@ class Eyebrows extends Eyes {
     rect(rightEyeBrow_x, eyeBrow_y, eyeBrowWidth, eyeBrowHeight);
   }
 
-  // Getters and Setters
 }

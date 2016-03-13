@@ -8,7 +8,6 @@ class Ears extends Eyebrows {
   // right
   float rightEar_x = head_x+headWidth-earWidth/2;
 
-
   // Constructors 
   Ears() {
   }
@@ -23,5 +22,4 @@ class Ears extends Eyebrows {
     arc(rightEar_x, ear_y, earWidth, earHeight, -PI/1.8, PI/1.8);
   }
 
-  // Getters and Setters
 }

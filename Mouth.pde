@@ -23,5 +23,4 @@ class Mouth extends Nose {
     line(mouth_x, mouth_y, mouth_x+mouthWidth, mouth_y);
   }
 
-  // Getters and Setters
 }

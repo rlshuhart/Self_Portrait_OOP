@@ -18,6 +18,4 @@ class Nose extends Eyes {
     nose(nose_x, nose_y, eyeWidth, eyeWidth*.65);
   }
 
-
-  // Getters and Setters
 }

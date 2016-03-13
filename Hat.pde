@@ -14,5 +14,4 @@ class Hat extends Head {
     rect(.05*width, .45*headWidth+.05*height, .5*headWidth, headWidth*.05);
   }
 
-  // Getters and Setters
 }

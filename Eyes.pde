@@ -50,6 +50,4 @@ class Eyes extends Head {
     ellipse(rightPupil_x, eye_y+eyeHeight/2-pupilDiam/2, pupilDiam, pupilDiam);
   }
 
-
-  // Getters and Setters
 }

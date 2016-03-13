@@ -17,5 +17,5 @@ class Head {
     stroke(skin);
     ellipse(head_x, head_y, headWidth, headHeight);
   }
-  // Getters and Setters
+
 }
